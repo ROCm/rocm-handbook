@@ -1,47 +1,66 @@
 .. meta::
-  :description: component documentation
-  :keywords: component, ROCm, documentation, anything else relevant
+  :description: ROCm handbook landing page linking to the AMD ROCm documentation volumes.
+  :keywords: ROCm, AMD ROCm, ROCm handbook, ROCm programming guide, ROCm optimization guide
 
-********************************************************************
-Component documentation
-********************************************************************
+***************
+ROCm handbook
+***************
 
-A short blurb about the component.
+The ROCm handbooks target developers who require a unified, book-style
+reference for ROCm and HIP. They aggregate documentation from the ROCm
+portal and organize it into a structured format optimized for in-depth
+study and offline access, available in both PDF and HTML.
 
-The component public repository is located at `https://github.com/ROCm/COMPONENT <https://github.com/ROCm/COMPONENT>`_.
+Each volume is maintained in its own repository and published as a separate
+documentation project. Use this page to navigate to the volume you need.
 
-.. grid:: 2
-  :gutter: 3
-
-  .. grid-item-card:: Install
-
-    * :doc:`Component prerequisites <./install/COMPONENT-prerequisites>`
-    * :doc:`Component installation overview <./install/COMPONENT-install>`
-    * :doc:`Component installation method 1 <./install/FILENAME>`
-    * :doc:`Component installation method 2 <./install/FILENAME>`
+Volumes
+=======
 
 .. grid:: 2
   :gutter: 3
 
-  .. grid-item-card:: Conceptual
+  .. grid-item-card:: AMD ROCm Programming Guide
+    :link: https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/
 
-    * :doc:`COMPONENT CONCEPT <./conceptual/FILENAME>`
-  
-  .. grid-item-card:: How to
+    AMD ROCm is a software stack, composed primarily of open-source
+    software, that provides the tools for programming AMD Graphics
+    Processing Units (GPUs), from low-level kernels to high-level end-user
+    applications.
 
-    * :doc:`Use SOMETHING <how-to/FILENAME>`
+    The AMD ROCm Programming Guide introduces the core concepts, APIs, and
+    best practices for programming with ROCm and the HIP programming
+    language. It provides hands-on guidance for writing GPU kernels,
+    managing memory, optimizing performance, and integrating HIP with the
+    broader AMD ROCm ecosystem of tools and libraries.
 
-  .. grid-item-card:: Samples|Examples|Tutorials
+    **Status:** Published.
 
-    * :doc:`COMPONENT SAMPLES|EXAMPLES|TUTORIALS <./tutorials/FILENAME>`  
+  .. grid-item-card:: AMD ROCm Optimization Guide
 
-  .. grid-item-card:: Reference
+    The AMD ROCm Optimization Guide focuses on performance optimization
+    techniques for AMD GPUs using the HIP programming language. This guide
+    provides comprehensive patterns and best practices for maximizing GPU
+    performance, covering essential topics such as parallel workload
+    optimization, reduction operations, memory coalescing, and multi-GPU
+    programming.
 
-    * :doc:`COMPONENT API REFERENCE <reference/FILENAME>`
-    * :doc:`COMPONENT OTHER REFERENCE <reference/FILENAME>`
+    **Status:** Coming soon (under validation).
 
-To contribute to the documentation, refer to
+Planned volumes
+===============
+
+The following volumes are planned and will be linked from this page when
+published:
+
+* AMD ROCm System Acceptance Guide
+* AMD ROCm Install Guide
+
+Contribute and license
+======================
+
+To contribute to the documentation, see
 `Contributing to ROCm <https://rocm.docs.amd.com/en/latest/contribute/contributing.html>`_.
 
-You can find licensing information on the
+Licensing information is available on the
 `Licensing <https://rocm.docs.amd.com/en/latest/about/license.html>`_ page.
