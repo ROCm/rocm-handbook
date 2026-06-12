@@ -15,11 +15,6 @@ in its own repository and published as a separate documentation project.
   Repository: [ROCm/AMD-rocm-programming-guide](https://github.com/ROCm/AMD-rocm-programming-guide).
   Published at: <https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/>.
 
-- **AMD ROCm Optimization Guide** — coming soon (under validation).
-  Repository: `amd-rocm-optimization-guide` (internal).
-
-Additional volumes (System Acceptance Guide, Install Guide) are planned.
-
 ## Build the documentation
 
 This repository builds with Sphinx using the same setup as the other ROCm
