@@ -8,7 +8,7 @@ external_projects_current_project = "rocm-handbook"
 # external_projects = ["amd-gpu-programming-guide"]
 external_projects_path = "projects.yaml"
 
-html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "instinct.docs.amd.com")
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "rocm-handbook.amd.com")
 html_context = {}
 if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True
@@ -24,7 +24,7 @@ copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved
 html_copy_source = True
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "instinct",
+    "flavor": "rocm",
     "link_main_doc": True,
     "use_download_button": True,
     "nav_secondary_items": {
