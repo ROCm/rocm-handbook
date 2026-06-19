@@ -1,8 +1,7 @@
 # Security Policy
 
 ## Reporting a vulnerability
-If you have discovered a security vulnerability in the ROCm handbook,
-please do NOT report it publicly using a GitHub issue. Instead,
-you should report the issue via the AMD Product Security website:
 
-https://www.amd.com/en/resources/product-security.html
+If you have discovered a security vulnerability in the ROCm handbook,
+do NOT report it publicly using a GitHub issue. Instead, report the issue
+through the [AMD Product Security website](https://www.amd.com/en/resources/product-security.html).
