@@ -2,13 +2,17 @@ name: Linting
 
 on:
   push:
-    branches: 
+    branches:
     - develop
     - main
+    - 'docs/*'
+    - 'roc**'
   pull_request:
-    branches: 
+    branches:
     - develop
     - main
+    - 'docs/*'
+    - 'roc**'
 
 jobs:
   call-workflow-passing-data:
