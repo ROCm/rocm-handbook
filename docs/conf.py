@@ -1,4 +1,5 @@
 """Configuration file for the Sphinx documentation builder."""
+
 import os
 import re
 from pathlib import Path
@@ -37,11 +38,11 @@ html_theme_options = {
 }
 extensions = ["rocm_docs"]
 
-html_static_path = ['_static', 'images']
+html_static_path = ["_static", "images"]
 
 html_css_files = ["index.css"]
 
 # Table of contents
 external_toc_path = "./sphinx/_toc.yml"
 
-exclude_patterns = ['.venv']
+exclude_patterns = [".venv"]
