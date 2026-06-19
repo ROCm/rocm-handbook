@@ -1,70 +1,47 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
+"""Configuration file for the Sphinx documentation builder."""
+import os
 import re
+from pathlib import Path
 
-'''
-html_theme is usually unchanged (rocm_docs_theme).
-flavor defines the site header display, select the flavor for the corresponding portals
-flavor options: rocm, rocm-docs-home, rocm-blogs, rocm-ds, instinct, ai-developer-hub, local, generic
-'''
-html_theme = "rocm_docs_theme"
-html_theme_options = {"flavor": "rocm-docs-home"}
+external_projects_remote_repository = ""
+external_projects_current_project = "rocm-handbook"
+# external_projects = ["amd-gpu-programming-guide"]
+external_projects_path = "projects.yaml"
 
-'''
-docs_header_version is used to manually configure the version in the header. If
-there exists a non-null value mapped to docs_header_version, then the header in
-the documentation page will contain the given version string.
-'''
-html_context = {
-    "docs_header_version": "3.15"
-}
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "rocm-handbook.amd.com")
+html_context = {}
+if os.environ.get("READTHEDOCS", "") == "True":
+    html_context["READTHEDOCS"] = True
+project = "ROCm handbook"
 
-
-# This section turns on/off article info
-setting_all_article_info = True
-all_article_info_os = ["linux"]
-all_article_info_author = ""
-
-# Dynamically extract component version
-with open('../CMakeLists.txt', encoding='utf-8') as f:
-    pattern = r'.*\brocm_setup_version\(VERSION\s+([0-9.]+)[^0-9.]+' # Update according to each component's CMakeLists.txt
-    match = re.search(pattern,
-                      f.read())
-    if not match:
-        raise ValueError("VERSION not found!")
-    version_number = match[1]
-
-# for PDF output on Read the Docs
-project = "PROJECT NAME"
+version = "1.0.0"
+release = version
+html_title = ""
 author = "Advanced Micro Devices, Inc."
-copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
-version = version_number
-release = version_number
+copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 
-external_toc_path = "./sphinx/_toc.yml" # Defines Table of Content structure definition path
-
-'''
-Doxygen Settings
-Ensure Doxyfile is located at docs/doxygen.
-If the component does not need doxygen, delete this section for optimal build time
-'''
-doxygen_root = "doxygen"
-doxysphinx_enabled = True
-doxygen_project = {
-    "name": "doxygen",
-    "path": "doxygen/xml",
+# Required settings
+html_copy_source = True
+html_theme = "rocm_docs_theme"
+html_theme_options = {
+    "flavor": "rocm",
+    "link_main_doc": True,
+    "use_download_button": True,
+    "nav_secondary_items": {
+        "Community": "https://github.com/ROCm/ROCm/discussions",
+        "Blogs": "https://rocm.blogs.amd.com/",
+        "ROCm&#8482 Docs": "https://rocm.docs.amd.com",
+        "ROCm Developer Hub": "https://www.amd.com/en/developer/resources/rocm-hub.html",
+    },
+    # Add any additional theme options here
 }
+extensions = ["rocm_docs"]
 
-# Add more addtional package accordingly
-extensions = [
-    "rocm_docs", 
-    "rocm_docs.doxygen",
-] 
+html_static_path = ['_static', 'images']
 
-html_title = f"{project} {version_number} documentation"
+html_css_files = ["index.css"]
 
-external_projects_current_project = "PROJECT NAME"
+# Table of contents
+external_toc_path = "./sphinx/_toc.yml"
+
+exclude_patterns = ['.venv']

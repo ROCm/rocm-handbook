@@ -1,11 +1,9 @@
 .. meta::
-  :description: COMPONENT license
-  :keywords: COMPONENT, ROCm, license
+  :description: Licensing information for the ROCm handbook.
+  :keywords: ROCm, AMD ROCm, ROCm handbook, license
 
-.. _license:
-
-******************************************
+*******
 License
-******************************************
+*******
 
-.. include:: ../LICENSE.txt
+.. include:: ../LICENSE
