@@ -15,6 +15,10 @@ in its own repository and published as a separate documentation project.
   Repository: [ROCm/AMD-rocm-programming-guide](https://github.com/ROCm/AMD-rocm-programming-guide).
   Published at: <https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/>.
 
+- **AMD ROCm Optimization Guide** — published.
+  Repository: [ROCm/amd-rocm-optimization-guide](https://github.com/ROCm/amd-rocm-optimization-guide).
+  Published at: <https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/>.
+
 ## Build the documentation
 
 This repository builds with Sphinx using the same setup as the other ROCm

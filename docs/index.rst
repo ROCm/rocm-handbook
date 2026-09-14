@@ -1,6 +1,6 @@
 .. meta::
   :description: ROCm handbook landing page linking to the AMD ROCm documentation volumes.
-  :keywords: ROCm, AMD ROCm, ROCm handbook, ROCm programming guide
+  :keywords: ROCm, AMD ROCm, ROCm handbook, ROCm programming guide, ROCm optimization guide
 
 ***************
 ROCm handbook
@@ -33,6 +33,17 @@ Volumes
     language. It provides hands-on guidance for writing GPU kernels,
     managing memory, optimizing performance, and integrating HIP with the
     broader AMD ROCm ecosystem of tools and libraries.
+
+    **Status:** Published.
+
+  .. grid-item-card:: AMD ROCm Optimization Guide
+    :link: https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/
+
+    The AMD ROCm Optimization Guide focuses on performance optimization
+    techniques for AMD GPUs using the HIP programming language. It provides
+    tutorials and best practices for maximizing GPU performance, covering
+    topics such as parallel workload optimization, reduction operations,
+    memory coalescing, and multi-GPU programming.
 
     **Status:** Published.
 
