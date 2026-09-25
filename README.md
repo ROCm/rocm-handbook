@@ -11,13 +11,15 @@ in its own repository and published as a separate documentation project.
 
 ## Volumes
 
-- **AMD ROCm Programming Guide**
-  Repository: [ROCm/AMD-rocm-programming-guide](https://github.com/ROCm/AMD-rocm-programming-guide).
-  Published at: <https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/>.
+### AMD ROCm Programming Guide
 
-- **AMD ROCm Optimization Guide**
-  Repository: [ROCm/amd-rocm-optimization-guide](https://github.com/ROCm/amd-rocm-optimization-guide).
-  Published at: <https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/>.
+- Documentation: <https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/>
+- Repository: [ROCm/amd-rocm-programming-guide](https://github.com/ROCm/amd-rocm-programming-guide)
+
+### AMD ROCm Optimization Guide
+
+- Documentation: <https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/>
+- Repository: [ROCm/amd-rocm-optimization-guide](https://github.com/ROCm/amd-rocm-optimization-guide)
 
 ## Build the documentation
 
