@@ -34,8 +34,6 @@ Volumes
     managing memory, optimizing performance, and integrating HIP with the
     broader AMD ROCm ecosystem of tools and libraries.
 
-    **Status:** Published.
-
   .. grid-item-card:: AMD ROCm Optimization Guide
     :link: https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/
 
@@ -44,8 +42,6 @@ Volumes
     tutorials and best practices for maximizing GPU performance, covering
     topics such as parallel workload optimization, reduction operations,
     memory coalescing, and multi-GPU programming.
-
-    **Status:** Published.
 
 Contribute and license
 ======================
