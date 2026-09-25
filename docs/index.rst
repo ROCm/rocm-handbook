@@ -17,6 +17,10 @@ documentation project. Use this page to navigate to the volume you need.
 Volumes
 =======
 
+The handbook is organized into the following volumes, each focused on a
+different aspect of developing with ROCm. Select a volume to open its full
+documentation.
+
 .. grid:: 2
   :gutter: 3
 
