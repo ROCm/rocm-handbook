@@ -17,7 +17,7 @@ project = "ROCm handbook"
 
 version = "1.0.0"
 release = version
-html_title = ""
+html_title = "ROCm handbook"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 
@@ -25,13 +25,20 @@ copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved
 html_copy_source = True
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "rocm",
-    "link_main_doc": True,
+    "announcement": "Additional content can be found on the <a id='rocm-banner' href='https://rocm.docs.amd.com/en/latest/'>ROCm documentation portal</a>.",
+    "flavor": "generic",
+    "link_main_doc": False,
     "use_download_button": True,
+    "header_title": "AMD ROCm™ Handbook",
+    "header_link": "https://rocm-handbook.amd.com/",
+    "version_list_link": False,
     "nav_secondary_items": {
-        "Community": "https://github.com/ROCm/ROCm/discussions",
+        "GitHub": "https://github.com/ROCm/rocm-handbook",
+        "Community": "https://github.com/ROCm/TheRock/discussions",
         "Blogs": "https://rocm.blogs.amd.com/",
-        "ROCm&#8482 Docs": "https://rocm.docs.amd.com",
+        "ROCm™ Docs": "https://rocm.docs.amd.com",
+        "Instinct™ Docs": "https://instinct.docs.amd.com/",
+        "Support": "https://github.com/ROCm/TheRock/issues/new/choose",
         "ROCm Developer Hub": "https://www.amd.com/en/developer/resources/rocm-hub.html",
     },
     # Add any additional theme options here
