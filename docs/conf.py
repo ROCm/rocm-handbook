@@ -33,14 +33,24 @@ html_theme_options = {
     "header_link": "https://rocm-handbook.amd.com/",
     "version_list_link": False,
     "nav_secondary_items": {
-        "GitHub": "https://github.com/ROCm/rocm-handbook",
-        "Community": "https://github.com/ROCm/TheRock/discussions",
+        "Core SDK": "https://rocm.docs.amd.com",
+        "AI Ecosystem": "https://rocm.docs.amd.com/projects/ai-ecosystem",
+        "GPU Systems and Infrastructure": "https://instinct.docs.amd.com",
+        "ROCm.AI": {
+            "AMD Skills": "https://rocm.docs.amd.com/projects/amd-skills/en/latest/",
+            "Hyperloom": "https://rocm.docs.amd.com/projects/hyperloom/en/latest/",
+            "ROCm CLI": "https://rocm.docs.amd.com/projects/rocm-cli/en/latest/",
+        },
+        "ROCm handbook": {
+            "AMD ROCm Programming Guide": "https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/",
+            "AMD ROCm Optimization Guide": "https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/",
+        },
         "Blogs": "https://rocm.blogs.amd.com/",
-        "ROCm™ Docs": "https://rocm.docs.amd.com",
-        "Instinct™ Docs": "https://instinct.docs.amd.com/",
-        "Support": "https://github.com/ROCm/TheRock/issues/new/choose",
-        "ROCm Developer Hub": "https://www.amd.com/en/developer/resources/rocm-hub.html",
+        "Developer Hub": "https://www.amd.com/en/developer/resources/rocm-hub.html",
     },
+    "repository_url": "https://github.com/ROCm/rocm-handbook",
+    "use_repository_button": True,
+    "use_issues_button": True,
     # Add any additional theme options here
 }
 extensions = ["rocm_docs"]
