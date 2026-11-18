@@ -15,7 +15,7 @@ if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True
 project = "ROCm handbook"
 
-version = "1.0.0"
+version = "10.2.0"
 release = version
 html_title = "ROCm handbook"
 author = "Advanced Micro Devices, Inc."
@@ -42,7 +42,7 @@ html_theme_options = {
             "ROCm CLI": "https://rocm.docs.amd.com/projects/rocm-cli/en/latest/",
         },
         "ROCm handbook": {
-            "AMD ROCm Programming Guide": "https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/",
+            "AMD ROCm Programming Guide": "https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/docs-10.2.0/",
             "AMD ROCm Optimization Guide": "https://rocm-handbook.amd.com/projects/amd-rocm-optimization-guide/en/latest/",
         },
         "Blogs": "https://rocm.blogs.amd.com/",

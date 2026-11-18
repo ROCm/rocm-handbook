@@ -25,7 +25,7 @@ documentation.
   :gutter: 3
 
   .. grid-item-card:: AMD ROCm Programming Guide
-    :link: https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/latest/
+    :link: https://rocm-handbook.amd.com/projects/amd-rocm-programming-guide/en/docs-10.2.0/
 
     AMD ROCm is a software stack, composed primarily of open-source
     software, that provides the tools for programming AMD Graphics
